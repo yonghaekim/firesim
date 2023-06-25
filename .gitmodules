@@ -1,9 +1,6 @@
 [submodule "platforms/f1/aws-fpga"]
 	path = platforms/f1/aws-fpga
 	url = https://github.com/firesim/aws-fpga-firesim
-[submodule "target-design/chipyard"]
-	path = target-design/chipyard
-	url = https://github.com/ucb-bar/chipyard
 [submodule "sw/network-benchmarks"]
 	path = sw/network-benchmarks
 	url = https://github.com/firesim/network-benchmarks.git
@@ -19,3 +16,6 @@
 [submodule "utils/FlameGraph"]
 	path = utils/fireperf/FlameGraph
 	url = https://github.com/brendangregg/FlameGraph.git
+[submodule "target-design/chipyard"]
+	path = target-design/chipyard
+	url = https://github.com/yonghaekim/chipyard.git
