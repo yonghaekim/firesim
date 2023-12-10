@@ -225,6 +225,7 @@ def get_f1_ami_id() -> str:
     """ Get the AWS F1 Developer AMI by looking up the image name -- should be region independent.
     """
     client = boto3.client('ec2')
+    f1_ami_name="FPGA Developer AMI - 1.12.2-40257ab5-6688-4c95-97d1-e251a40fd1fc"
     response = client.describe_images(Filters=[{'Name': 'name', 'Values': [f1_ami_name]}])
     assert len(response['Images']) == 1
     return response['Images'][0]['ImageId']
